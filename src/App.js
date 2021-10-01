@@ -1,8 +1,13 @@
+import Main from "./components/Main";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div>
-      Close Up
+    <div className="app"> 
+      <Nav />
+      <Header />
+      <Main/>
     </div>
   );
 }
