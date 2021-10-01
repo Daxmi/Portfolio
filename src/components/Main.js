@@ -1,7 +1,6 @@
 import React from 'react'
 import Contact from './Contact';
-import Interest from './Interest'
-import Skills from './Skills'
+import Skills from './Skills';
 import Works from './Works';
 
 const Main = () => {
@@ -9,7 +8,7 @@ const Main = () => {
         <div>
            <Skills />
            <Works />
-           {/* <Interest /> */}
+         
            <Contact />
         </div>
     )

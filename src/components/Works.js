@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import karzym from './image/karzym.png';
+import React from 'react';
 import recentWorks from '../work';
 
 const Works = () => {
-    const [description, showDescription] = useState(false);
     const {works} = recentWorks;
     return (
         <div className="works">
