@@ -5,14 +5,14 @@ const Header = () => {
   return (
     <div className="header">
       <div className="my-name">
-      <h1>Hi. I'm David.</h1>
-      <Typed 
-      className="typed-text"
-      strings={["A Web Designer", "A Web Developer"]}
-      typeSpeed={120}
-      backSpeed={10}
-      loop
-      />
+        <h1>Hi. I'm David.</h1>
+        <Typed
+          className="typed-text"
+          strings={["A Web Designer", "A Web Developer"]}
+          typeSpeed={120}
+          backSpeed={10}
+          loop
+        />
       </div>
     </div>
   );

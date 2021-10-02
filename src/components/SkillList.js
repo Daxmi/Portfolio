@@ -10,7 +10,7 @@ const SkillList = () => {
         <div>
           <img src={skills.image} alt={skills.name}/>
         </div>
-        <div className="skill-name"><p>{skills.name}</p></div>
+        <div className="skill-name"><h3>{skills.name}</h3></div>
       </div>
       )}
     </div>

@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 * {
   /* border: 1px solid red; */
 }
 body {
   margin: 0;
-  background-color: #fcfcfc;
+  /* background-color: #fcfcfc; */
+  background-color: black;
   box-sizing: border-box;
+  font-family: Fredoka One, sans-serif;
   /* border: 1px solid red; */
 }
 
@@ -46,9 +49,27 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: url(./images/img-home.jpg);
+  background: url(./images/img-home.jpg);
+  
 }
-
+.header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 30%, black 100%);
+}
+/* .overlay {
+  background-image: linear-gradient(
+    180deg,#ed6823 0%,#000 75%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+} */
 .my-name {
   /* margin-top: 40px; */
   position: absolute;
@@ -61,12 +82,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  
 }
 
 .my-name h1 {
   font-size: 3.125rem;
   font-weight: 800;
-  font-family: Dancing Script;
+  font-family: Fredoka One, sans-serif;
 }
 
 .typed-text {
@@ -77,7 +99,8 @@ p {
   font-family: Roboto;
   font-size: 18px;
   line-height: 30px;
-  /* font-weight: 600; */
+  color: white;
+ 
 }
 
 .bars {
@@ -110,6 +133,8 @@ p {
   padding: 0;
   list-style: none;
   background: black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .nav-list ul li,
@@ -118,23 +143,39 @@ p {
   color: white;
 }
 
-.skills-container {
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto 70px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.about-container{
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto 70px;
+  color: white;
+  padding: 10px;
+}
+.about-container h5 {
+  font-weight: 400;
+  line-height: 1.6em;
+  font-size: 16px;
+}
+.header-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  
 }
 
-.skills-header {
-  padding: 20px 20px 0;
+.header-text {
+  padding: 20;
   font-size: 2.2rem;
-  font-weight: 900;
-  color: #1199c0;
-  text-transform: capitalize;
-  border-radius: 8px 8px 0 0;
-  border: 1px solid #ccc;
-  border-bottom: none;
+  font-weight: 500;
+  color: white;
 }
 
 .eachSkill {
@@ -148,42 +189,49 @@ p {
   width: 100%;
   max-width: 800px;
   margin: auto;
-  background-color: white;
+  text-align: center;
+  /* background-color: white; */
 }
 
-.skill {
-  width: 50%;
+/* .skill {
+  width:  100%;
   max-width: 90px;
   margin: auto;
   text-align: center;
   padding: 20px 10px 10px;
-}
+} */
 
 .skill img {
   width: 100%;
   height: 80px;
 }
 
+.skill-name h3 {
+  color: white;
+  font-weight: 400;
+}
 .works {
+  
   margin: 20px auto;
 }
 
 .projects {
-  box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgb(0 0 0 / 40%);
-  background-color: white;
+  /* box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgb(0 0 0 / 40%); */
+  /* background-color: white; */
   padding: 20px;
+  position: relative;
 }
 .each-project {
   position: relative;
   width: 80%;
   max-width: 500px;
   margin: 20px auto;
-  text-align: center;
-  background-color: white;
-  padding: 20px 10px 10px;
+  /* text-align: center; */
+  background-color: #181717;
+  /* padding: 10px; */
   box-sizing: border-box;
-  cursor: pointer;
-  box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgb(0 0 0 / 40%);
+  border-radius: 10px;
+  /* box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgb(0 0 0 / 40%); */
  
 }
 .each-project:hover {
@@ -193,24 +241,29 @@ p {
   width: 100%;
 }
 .project-img img {
-  width: 90%;
+  width: 100%;
 }
-/* .project-description {
-
-  margin: auto;
-
-  display: flex;
-  width: 90%;
-  justify-content: center;
-  backdrop-filter: blur(200px);
-  align-items: center;
-  height: 90%;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: rgb(f, f, f, 0.2);
-} */
+.project-name {
+  color: red;
+  font-size: 20px;
+  
+}
+.project-description {
+  padding: 20px;
+}
 .contact {
   background-color: white;
+}
+
+.button {
+  background-color: white;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: red;
+  transition: all 0.5s ease-out;
 }
 .grid-container {
   box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgb(0 0 0 / 40%);
@@ -251,9 +304,9 @@ a:active, a:hover, a:link, a:visited {
   align-items: center;
   transition: all 1.5s 0s;
 }
-.contact-container {
-  margin-bottom: 20px;
-}
+/* .contact-container {
+  padding-bottom: 20px;
+} */
 @media screen and (min-width: 768px) {
   .nav-bar {
     padding: 10px 70px;
@@ -305,6 +358,7 @@ a:active, a:hover, a:link, a:visited {
   .nav-list ul li {
     padding: 0 20px;
     color: black;
+    
   }
   .header {
     color: white;

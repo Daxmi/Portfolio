@@ -1,19 +1,21 @@
-import css from "./components/image/css.png";
+
 import javascript from "./components/image/javascript.png";
-import html from "./components/image/html.png";
-import git from "./components/image/git.jpeg";
-import github from "./components/image/github.jpeg";
-import reactimg from "./components/image/react.png";
+import html2 from './images/html2.png';
+import CSS from './images/CSS3.png';
+import GIT from './images/GIT2.png';
+import React from './images/React.svg';
+import GITHUB from './images/GITHUB2.png';
+
 const skill = {
     proficiency:  [
         {
             id: 1,
-            image: html,
+            image: html2,
             name: "HTML5"
         }, 
         {
             id: 2,
-            image: css,
+            image: CSS,
             name: "CSS"
         },
         {
@@ -23,17 +25,17 @@ const skill = {
         },
         {
             id: 4,
-            image: git,
+            image: GIT,
             name: "git"
         },
         {
             id: 5,
-            image: github,
+            image: GITHUB,
             name: "github"
         },
         {
             id: 6,
-            image: reactimg,
+            image: React,
             name: "React"
         },
     ]

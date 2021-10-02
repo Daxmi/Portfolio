@@ -3,9 +3,9 @@ import SkillList from "./SkillList";
 
 const Skills = () => {
   return (
-    <div  >
-      <div className="skills-container">
-      <header className="skills-header">Skills</header>
+    <div  className="container">
+      <div className="header-container">
+      <header className="header-text">Skills</header>
       </div>
         {/* <p>I am proficient in the following skills:</p> */}
         <SkillList />
