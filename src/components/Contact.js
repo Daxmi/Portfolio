@@ -9,8 +9,8 @@ import { FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <div className="skills-container">
-        <header className="skills-header"> Contact Me</header>
+      <div className="header-container">
+        <header className="header-text"> Contact Me</header>
       </div>
       <div className="contact">
         <div className="grid-container">

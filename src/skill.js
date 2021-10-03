@@ -1,5 +1,5 @@
 
-import javascript from "./components/image/javascript.png";
+import javascript from "./images/javascript.png";
 import html2 from './images/html2.png';
 import CSS from './images/CSS3.png';
 import GIT from './images/GIT2.png';

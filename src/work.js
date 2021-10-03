@@ -1,34 +1,39 @@
-import karzym from "./components/image/karzym.png"
+import karzym from "./components/image/karzym.png";
+import eportal from "./images/e-portal.png";
+import todo from "./images/todo.png";
 
 const recentWorks = {
     works: [
         {
-            name: "Photography1",
+            id: 1,
+            name: "Photography",
             img : karzym,
-            description: "A photography website that is used to display pictures taking by a photographer",
+            description: "A photography website",
             stack: "Html, CSS, Vanilla Javascript",
-            link: "https://github.com/Daxmi/weather",
-            githublink: "https://github.com/Daxmi/weather"
+            link: "https://daxmi.github.io/Karzym/",
         },
         {
-            name: "Photography2",
-            img : karzym,
-            description: "A photography website that is used to display pictures taking by a photographer",
+            id: 2,
+            name: "e-portal",
+            img : eportal,
+            description: "An online learning platform",
             stack: "Html, CSS, Vanilla Javascript",
-            link: "https://github.com/Daxmi/weather",
+            link: "https://daxmi-eportal.netlify.app/",
         },
         {
-            name: "Photography3",
-            img : karzym,
-            description: "A photography website that is used to display pictures taking by a photographer",
+            id: 3,
+            name: "To-do",
+            img : todo,
+            description: "A to-do list App",
             stack: "Html, CSS, Vanilla Javascript",
-            link: "https://github.com/Daxmi/weather",
+            link: "https://daxmi-to-do.netlify.app/",
         },
         {
-            name: "Photography4",
+            id: 4,
+            name: "Weather",
             img : karzym,
-            description: "A photography website that is used to display pictures taking by a photographer",
-            stack: "Html, CSS, Vanilla Javascript",
+            description: "A weather app for 5 days",
+            stack: "Html, CSS, React",
             link: "https://github.com/Daxmi/weather",
         }
     ]
