@@ -1,6 +1,7 @@
 import karzym from "./components/image/karzym.png";
 import eportal from "./images/e-portal.png";
 import todo from "./images/todo.png";
+import weather from "./images/weather.png";
 
 const recentWorks = {
     works: [
@@ -31,10 +32,10 @@ const recentWorks = {
         {
             id: 4,
             name: "Weather",
-            img : karzym,
+            img : weather,
             description: "A weather app for 5 days",
             stack: "Html, CSS, React",
-            link: "https://github.com/Daxmi/weather",
+            link: "https://daxmi-weather.netlify.app/",
         }
     ]
 }
