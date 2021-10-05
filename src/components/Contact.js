@@ -4,7 +4,7 @@ import myContact from "../contact";
 const Contact = () => {
   const { contacts } = myContact;
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <div className="header-container">
         <header className="header-text"> Contact Me</header>
       </div>
@@ -13,7 +13,7 @@ const Contact = () => {
           {contacts.map((contact) => (
             <a
               href={contact.href}
-              target="_blank"
+              target={contact.target}
               rel = "noreferrer"
               title={contact.title}
               className="handle"

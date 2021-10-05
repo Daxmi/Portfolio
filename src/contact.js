@@ -1,9 +1,9 @@
 import { FaTwitter } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaSms } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import {FiMail} from "react-icons/fi"
 
 let myContact = {
     contacts: [
@@ -22,7 +22,7 @@ let myContact = {
             target: "",
             title: "Call me",
             className: "handle",
-            text: "+2349015401642",
+            text: "",
             icon: FaPhone
         },
         {
@@ -31,18 +31,18 @@ let myContact = {
             target: "_blank",
             title: "send a Whatsapp Message",
             className: "handle",
-            text: "+2347053250220",
+            text: "",
             icon: FaWhatsapp
         },
         
         {
             id: 4,
-            href: "https://api.whatsapp.com/message/K6O7FIZT6DOXA1",
+            href: "ndavidogbonnaya@gmail.com",
             target: "_blank",
-            title: "leave a text",
+            title: "send a mail",
             className: "handle",
-            text: "+2347053250220",
-            icon: FaSms
+            text: "",
+            icon: FiMail
         },
         {
             id: 5,

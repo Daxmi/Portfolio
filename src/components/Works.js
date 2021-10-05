@@ -5,7 +5,7 @@ import Button from "./Button";
 const Works = () => {
   const { works } = recentWorks;
   return (
-    <div className="container">
+    <div className="container" id="works">
       <div className="header-container">
         <header className="header-text"> Recent Work</header>
       </div>
